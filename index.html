@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sacramento Kings Fan Survey</title>
+  <h1 id="title">Sacramento Kings Fan Survey</h1>
+  <link rel="stylesheet" href="./styles.css">
+  </head>
+
+<body>
+  
+<main>
+  <div id="magicBox">
+  <form id="survey-form">
+    <div class="form-group">
+      <p id="description">Name</p>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label type="name" id="name-label">
+      <p id="description">Email</p></label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="email-label">
+      <p id="description">Age <span class="clue">(optional)</span></p></label>
+      <input id="number" type="number" placeholder="Enter your age" min="5" max="99">
+      <label style="display:none" type="number" id="number-label">Text</label>
+    </div>
+
+    <div class="form-group">
+      
+      <p>Which option best describes you?</p>
+      <select id="dropdown" name="occupation">
+        <option disabled selected value="select_occupation">Select your current occupation</option>
+        <option value="student">Elementary-high school student</option>
+        <option value="full_time_college">Full time college</option>
+        <option value="full_time_job">Full time job</option>
+        <option value="partTime">Part-time college and/or work</option>
+        <option value="preferNot">Prefer not to say</option>
+        <option value="Other">Other</option>
+    </div>
+</select>
+<p>How often do you watch Kings' games?</p>     
+    <div class="form-group">   
+      
+      <input type="radio" id="every_game" name="watch_games" value="every_game">
+      <label for="every_game">Every Game</label>
+      <input type="radio" id="sometimes" name="watch_games" value="sometimes">
+      <label for="sometimes">Sometimes</label>
+      <input type="radio" id="never" name="watch_games" value="never">
+      <label for="never">Never</label>
+    </div>
+
+    <div class="form-group">
+      <p>What is your preferred method of watching games?</p>
+      <select id="dropdown" name="watch_method">
+        <option value="tv">TV</option>
+        <option value="radio">Radio</option>
+        <option value="social">Social Media</option>
+        <option value="streaming">Streaming <span class="clue">(Sling, Hulu, YouTube TV, etc...)</option>
+        <option value="dont_watch">I don't watch</option><br>
+      </select>
+    </div>
+
+    <div class="form-group"> 
+      <p>What would you like to see improved for live games?<span class="clue">(select all that apply)</span></p>
+      <input type="checkbox" id="golden_1" name="improve" value="golden_1">
+      <label for="golden_1">The Golden 1 Center</label><br>
+      <input type="checkbox" id="parking" name="improve" value="parking">
+      <label for="parking">Parking</label><br>
+      <input type="checkbox" id="food" name="improve" value="food">
+      <label for="food">Food</label><br> 
+      <input type="checkbox" id="halftime" name="improve" value="halftime">
+      <label for="halftime">Halftime Entertainment</label>
+    </div>
+  
+    <div class="form-group">
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="textarea" rows="5" cols="50" placeholder="Enter your comment here..."></textarea><br>
+    </div>
+
+    <div class="form-group">
+      <input id="submit" type="submit" value="Submit">
+    </div>
+</main>
+</div>
+</body>
+</html>
